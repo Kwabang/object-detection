@@ -1,5 +1,6 @@
 from Gyeongtaek.detect_items import detect_items
 from Jonghwan.draw_items import draw_items
+from Hyunji.show_scores import show_scores
 import requests
 from PIL import Image
 import argparse
@@ -19,3 +20,4 @@ def cli():
   image = Image.open(image_file)
   detected_items = detect_items(image)
   draw_items(image, detected_items)
+  show_scores(detected_items)

@@ -19,4 +19,4 @@ def draw_items(image, detected_items):
 
   plt.imshow(image)
   plt.axis('off')
-  plt.show()
+  plt.show(block=False)
